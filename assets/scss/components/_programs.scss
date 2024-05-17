@@ -58,17 +58,23 @@
         column-gap: 24px;
 
         &__card {
-            width: 344px;
+            width: 23.7%;
             height: 260px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../../../images/programs/first-program\ image.png);
-            background-repeat: no-repeat;
-            background-size: cover;
             overflow: hidden;
             border-radius: 16px;
             padding: 0 24px;
+            @include trn();
+
+            &:hover {
+                box-shadow: -1px 8px 33px 14px rgba(255, 133, 65, 1);
+                -webkit-box-shadow: -1px 8px 33px 14px rgba(255, 133, 65, 1);
+                -moz-box-shadow: -1px 8px 33px 14px rgba(255, 133, 65, 1);
+                transform: scale(1.05);
+                cursor: pointer;
+            }
 
             &__title {
                 font-family: $main-font;
@@ -77,6 +83,10 @@
                 color: $white-color;
                 margin-bottom: 9px;
                 line-height: 1.2;
+
+                &:hover {
+                    color: $orange-color;
+                }
             }
 
             &__locations {
@@ -109,8 +119,12 @@
                 font-weight: 300;
                 font-size: 16px;
                 color: $white-color;
+
+                &:hover {
+                    color: $orange-color;
+                }
             }
         }
-    }
 
+    }
 }
