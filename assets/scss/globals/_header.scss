@@ -1,0 +1,95 @@
+.header {
+    border-bottom: 1px solid #ccc;
+
+    &-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+    }
+
+    &-logo {
+        width: 100px;
+        height: 80px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+        column-gap: 48px;
+    }
+
+    &-link {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 16px;
+        color: #8d8c8b;
+        @include trn();
+
+        &.active {
+            color: $header-link-color;
+        }
+
+        &:hover {
+            color: $header-link-color;
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+    }
+
+    &-button.orange {
+        border-radius: 8px;
+        padding: 18px 36px;
+        background: $orange-color;
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 16px;
+        color: $white-color;
+        border: 1px solid transparent;
+        @include trn();
+
+        &:hover {
+            background-color: transparent;
+            border-color: $orange-color;
+            color: $orange-color;
+        }
+    }
+
+    &-button:nth-child(2) {
+        border: 1px solid $border-color;
+        border-radius: 8px;
+        padding: 16px;
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 16px;
+        color: $border-color;
+        outline: none;
+        @include trn();
+
+        &:hover {
+            background-color: $border-color;
+            color: $white-color;
+        }
+    }
+
+    &-mobile {
+        border-radius: 8px;
+        width: 43px;
+        height: 43px;
+        background: $orange-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+}

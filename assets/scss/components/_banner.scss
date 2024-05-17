@@ -1,0 +1,69 @@
+.banner {
+    padding: 80px 0;
+
+    &-row {
+        width: 1420px;
+        height: 720px;
+        padding: 0 80px;
+        border-radius: 26px;
+        background: linear-gradient(360deg, #000 0%, rgba(28, 25, 23, 0) 77.86%), url(../../../images/banner/banner-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &-title {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 125%;
+        color: $white-color;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+
+    &-subtitles {
+        display: flex;
+        align-items: center;
+        margin-bottom: 84px;
+        column-gap: 25px;
+    }
+
+    &-subtitle {
+        font-family: $main-font;
+        font-weight: 400;
+        font-size: 25px;
+        color: $white-color;
+        line-height: 1.1;
+        cursor: pointer;
+    }
+
+    &-arrow {
+        width: 64px;
+        height: 64px;
+        border: 1px solid $white-color;
+        border-radius: 100%;
+        @include trn();
+
+        &:hover {
+            background-color: $orange-color;
+            border-color: transparent;
+        }
+    }
+}
+
+//MEDIA QUERIES - START
+
+@include media(1000) {
+    .banner-row {
+        width: 1320px;
+        height: 620px;
+    }
+}
