@@ -430,4 +430,97 @@ li {
 }
 .comment-card__title .bold {
   font-size: 20px;
+}
+
+.about {
+  padding: 60px 0;
+}
+.about-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 39px;
+  color: #000;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.about-title__orange {
+  color: #ff8541;
+}
+.about-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 26px;
+  background: #f9f8f6;
+  padding: 48px;
+}
+.about-content {
+  width: 50%;
+  height: 100%;
+}
+.about-content__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 31px;
+  color: #ff8541;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.about-content__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #555351;
+  margin-bottom: 60px;
+}
+.about-images {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.about-images img {
+  width: 127px;
+  height: 127px;
+  background-size: cover;
+}
+
+.gradient__box {
+  width: 127px;
+  height: 127px;
+  background-image: url(../../../images/about/first-gradient.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradient__box:nth-child(4) {
+  background-image: url(../../../images/about/second-gradient.png);
+}
+
+.gradient__box:nth-child(5) {
+  background-image: url(../../../images/about/third-gradient.png);
+}
+
+.gradient__box:nth-child(7) {
+  background-image: url(../../../images/about/fourth-gradient.png);
+}
+
+.gradient__box:nth-child(10) {
+  background-image: url(../../../images/about/fifth-gradient.png);
+}
+
+.logo {
+  width: 127px;
+  height: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 110px;
+  height: 79px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,102 @@
+.about {
+    padding: 60px 0;
+
+    &-title {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 39px;
+        color: $black-color;
+        cursor: pointer;
+        margin-bottom: 50px;
+
+        &__orange {
+            color: $orange-color;
+        }
+    }
+
+    &-row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 26px;
+        background: #f9f8f6;
+        padding: 48px;
+    }
+
+    &-content {
+        width: 50%;
+        height: 100%;
+
+        &__title {
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 31px;
+            color: $orange-color;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+
+        &__subtitle {
+            font-family: $main-font;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
+            color: $border-color;
+            margin-bottom: 60px;
+        }
+    }
+
+    &-images {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        img {
+            width: 127px;
+            height: 127px;
+            background-size: cover;
+        }
+    }
+}
+
+.gradient__box {
+    width: 127px;
+    height: 127px;
+    background-image: url(../../../images/about/first-gradient.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradient__box:nth-child(4) {
+    background-image: url(../../../images/about/second-gradient.png);
+}
+
+.gradient__box:nth-child(5) {
+    background-image: url(../../../images/about/third-gradient.png);
+}
+
+.gradient__box:nth-child(7) {
+    background-image: url(../../../images/about/fourth-gradient.png);
+}
+
+.gradient__box:nth-child(10) {
+    background-image: url(../../../images/about/fifth-gradient.png);
+}
+
+.logo {
+    width: 127px;
+    height: 127px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 110px;
+        height: 79px;
+    }
+}
+
